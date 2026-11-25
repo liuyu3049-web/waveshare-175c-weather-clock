@@ -1,0 +1,7 @@
+/build/
+/out/
+/.arduino*/
+/.env
+__pycache__/
+*.elf
+*.map
