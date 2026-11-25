@@ -42,4 +42,13 @@
 - 使用相同走时代码的测试版做了 5 分钟真实深睡。定时唤醒时保持 Wi-Fi 关闭，首屏直接显示本地时间。与电脑测得的经过时间相比，设备慢约 0.61 秒。整夜走时误差和一天的整机耗电仍待实测。
 - 排查隔夜走时时，可用 115200 波特率打开 USB 串口，在唤醒并完成网络校时后发送 `rtc`。`ntp_error_ms` 表示首次网络时间减去离线估计时间的毫秒数，正值表示离线时钟偏慢。
 
-工程使用的 Noto Sans SC 与 Noto Serif Bold 字形及字体许可见 [FONT-LICENSE.txt](FONT-LICENSE.txt)。三个仿机械表盘来自本项目的设计参考，保留了参考盘面的品牌标识。
+## 开源许可
+
+项目原创程序和文档采用 MIT 许可证，包含 `v2026.11.23` 中的原创代码。欢迎在保留版权声明和许可证的前提下使用、修改和分发。[MIT 许可证](LICENSE)
+
+| 第三方内容 | 来源与许可 |
+| --- | --- |
+| Noto Sans SC、Noto Serif Bold 字形 | SIL Open Font License 1.1，版权声明和字形来源见[字体许可](FONT-LICENSE.txt)。 |
+| 微雪 1.75C 原理图 | 来自[微雪官方仓库](https://github.com/waveshareteam/ESP32-S3-Touch-AMOLED-1.75C/tree/0349e331567b3fb33752abc70c9d1ce12f7418e5/Schematic)，保留[上游 Apache 2.0 许可](LICENSES/Waveshare-Apache-2.0.txt)。 |
+| 固件依赖 | [Arduino-ESP32](LICENSES/Arduino-ESP32.md)、[ESP-IDF](LICENSES/ESP-IDF.txt)、[Arduino GFX](LICENSES/Arduino-GFX.txt) 和 [SensorLib](LICENSES/SensorLib-MIT.txt) 分别遵循各自的许可。 |
+| 三款仿机械表盘 | [参考底图](src/reference_art)、从参考盘采样的日期数字及[实机截图](docs/images/nov23-dials.png)中的对应图案和品牌标识，相关权利归原权利人。项目的 MIT 授权仅覆盖其中的原创程序。 |
